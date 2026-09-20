@@ -1,3 +1,26 @@
 * {
-    margin: auto;
+    margin: 0px;
+}
+
+/* Vou adicionar depois a class em cada um */
+body {
+    background-color: #410713;
+}
+
+header {
+    margin: 80px 60px;
+}
+
+section {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.heading-sobre {
+    color: #afa62c;
+}
+
+p {
+    color: #fff;
+    text-align: justify;
 }
