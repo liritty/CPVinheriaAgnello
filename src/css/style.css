@@ -1,26 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=LINE+Seed+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+:root {
+    --verde-claro: #c4c97e; 
+    --vermelho-vinho: #3a0a14; 
+    --vermelho: #7F1734;
+    --texto-escuro: #0e0e0e;
+    --texto-claro: #ffffff;
+    --background-img: url('../assets/imgs/img 17.webp');
+}
+
+@view-transition {
+    navigation: auto;
+}
+
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Vou adicionar depois a class em cada um */
 body {
-    background-color: #410713;
+    font-family: 'LINE Seed JP';
+    background-color: var(--vermelho-vinho);
+    color: var(--texto-claro);
 }
 
-header {
-    margin: 80px 60px;
+/* header */
+
+.home-header {
+    box-shadow: none !important;
 }
 
-section {
-    margin-left: 300px;
-    margin-right: 300px;
+header, .site-header {
+    background-color: var(--texto-escuro);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.5rem 2%; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 100%;     
+    z-index: 999;
 }
 
-.heading-sobre {
-    color: #afa62c;
+/* logo */
+
+.logo-cont {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo-cont img {
+    height: 30px;
+}
+
+.logo-cont h1 {
+    color: var(--vermelho); 
+    font-size: 1.9rem;
+    font-family: 'Monsieur La Doulaise';
+    transform: translateY(12px);
+}
+
+/* menu */
+nav, #menu-naveg {
+    display: flex;
+    gap: 2rem; 
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto-claro); 
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--vermelho-vinho); 
+}
+
+#home-container {
+    background-image: linear-gradient(to bottom, var(--texto-escuro) 10%, #c4c97e00 35%), var(--background-img);
+    width: 100vw;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+}
+
+.home-nome {
+    font-family: 'Monsieur La Doulaise';
+    font-size: 9rem;
+
+}
+
+.but-home {
+  display: inline-block;
+  font-family: 'LINE Seed JP';
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.but-home:hover {
+  background-color: var(--vermelho-vinho);
+  box-shadow: 0px 15px 20px rgba(139, 25, 25, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.but-home:active {
+  transform: translateY(-1px);
+}
+
+
+/* main - sobre */
+main {
+    padding: 4rem 10%;
+    padding-top: 150px
+}
+
+.heading-sobre, h1, h2 {
+    color: var(--texto-claro); 
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 p {
-    color: #fff;
+    line-height: 1.6;
+    font-size: 1.1rem;
     text-align: justify;
 }
+
+ 
