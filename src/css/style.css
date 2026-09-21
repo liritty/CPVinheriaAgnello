@@ -142,10 +142,48 @@ main {
     text-align: center;
 }
 
-p {
+.heading-sobre {
+    margin-top: 60px;
+    color: var(--verde-claro);
+}
+
+.paragrafo-sobre {
     line-height: 1.6;
     font-size: 1.1rem;
     text-align: justify;
+    max-width: 650px;
+    margin: 20px auto;
 }
 
- 
+.img-sobre {
+    width: 600px;
+    display: block;
+    margin: 0 auto; 
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.link-sobre {
+    color: #a7a423;
+}
+
+figcaption {
+    color: #a3a3a3;
+    text-align: center;
+}
+
+.figcaption-text-color {
+    color: #a7a423;
+}
+
+iframe {
+    margin: 10px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: var(--texto-escuro);
+    margin: 0px;
+    padding: 20px;
+}
