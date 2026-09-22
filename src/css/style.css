@@ -187,3 +187,15 @@ footer {
     margin: 0px;
     padding: 20px;
 }
+
+/* ABA GALERIA */
+.tintos{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    max-width: 1000px;
+}
+
+.tintoimg{
+    width: 300px;
+}
