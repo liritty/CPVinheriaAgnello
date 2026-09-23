@@ -8,6 +8,7 @@
     --texto-escuro: #0e0e0e;
     --texto-claro: #ffffff;
     --background-img: url('../assets/imgs/img\ 22.jpg');
+    --background-img-contato: url('../assets/imgs/img\ 9.jpg');
 }
 
 @view-transition {
@@ -303,14 +304,18 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 100px;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
-    background-color: var(--vermelho-vinho);
+    background-image: var(--background-img-contato);
     font-size: 30px;
     flex-direction: column;
     gap: 10px;
+
+    width: 100vw;
+    min-height: 100vh;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
 }
  
 
