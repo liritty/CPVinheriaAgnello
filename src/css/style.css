@@ -189,7 +189,7 @@ nav a:hover {
 /* main - sobre */
 main {
     padding: 4rem 10%;
-    padding-top: 150px;
+    padding-top: 100px;
     flex: 1;
 }
 
@@ -237,9 +237,19 @@ iframe {
     margin: 10px;
 }
 
-.video-sobre{
+.video-sobre {
+    display: block;
+    margin: 0 auto;
+}
+
+.lista-vinhos {
     display: flex;
-    margin-left: 250px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin-left: 456px;
+    color: #bdba14;
+    font-weight: bold;
 }
 
 /* ABA GALERIA */
