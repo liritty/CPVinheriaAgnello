@@ -129,6 +129,13 @@ nav a:hover {
   transform: translateY(-1px);
 }
 
+.section-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* main - sobre */
 main {
@@ -178,6 +185,11 @@ figcaption {
 
 iframe {
     margin: 10px;
+}
+
+.video-sobre{
+    display: flex;
+    margin-left: 250px;
 }
 
 /* footer */
