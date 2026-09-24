@@ -185,11 +185,68 @@ nav a:hover {
     align-items: center;
 }
 
+/* equipw */
+
+.equipe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-equipe {
+    width: 600px;
+    display: block;
+    margin: 0 auto; 
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+.tabela-equipe {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 40px 0;
+    font-size: 1.2rem;
+    background-color: rgba(71, 0, 0, 0.0473);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(27, 4, 4, 0.562);
+}
+
+.tabela-equipe thead {
+    background-color: var(--vermelho);
+    color: var(--texto-claro);
+    font-family: 'LINE Seed JP';
+}
+
+.tabela-equipe th, .tabela-equipe td {
+    padding: 18px 25px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabela-equipe tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabela-equipe tbody tr:hover {
+    background-color: rgba(112, 20, 20, 0.432);
+}
+
+.tabela-equipe tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
 
 /* main - sobre */
 main {
     padding: 4rem 10%;
-    padding-top: 150px;
+    padding-top: 60px;
     flex: 1;
 }
 

@@ -11,7 +11,7 @@ Página inicial que da a abertura do site.
 Conta um pouco da trajetória da empresa.
 - [Galeria](#-galeria) - Nicolle
 Mostruário dos vinhos e espumantes.
-- [Equipe](#-equipe) - Gabriel
+- [Equipe](#-equipe) - Lirity
 Apresentação da equipe da Vinheria Agnello.
 - [Contato](#-contato) - Eduardo
 Formulário para entrar em contato com a empresa.
@@ -23,3 +23,6 @@ O projeto resolve o problema do empresário fictício Sr. Giulio e sua filha Bia
 - [HTML]
 - [CSS]
 
+## Repositório
+- GitHub: https://github.com/liritty/CPVinheriaAgnello.git
+- GitHub Pages: https://liritty.github.io/CPVinheriaAgnello/
