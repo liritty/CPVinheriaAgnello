@@ -1,5 +1,5 @@
 ## Equipe Ctrl + 5
-Eduardo Ambra Giordano de Castro, Flávia Sirahata Hasegava, Gabriel Souza Bore de Carvalho, Lirity Ribeiro de Paiva e Nicolle de Lima Nascimento.
+Eduardo Ambra Giordano de Castro, Flávia Sirahata Hasegava e Lirity Ribeiro de Paiva.
 
 # Projeto Vinheria Agnello
 Site desenvolvido para o case da empresa fictícia Vinheria Agnello na disciplina de Front-end Design da FIAP.
