@@ -185,7 +185,7 @@ nav a:hover {
     align-items: center;
 }
 
-/* equipw */
+/* equipe */
 
 .equipe-section {
     display: flex;
@@ -338,18 +338,18 @@ iframe {
 }
 
 .item1{
-    
     border: 1px solid #00000036;
 }
 
+/* Vinhos imagens */
 .tintoimg{
     width: 260px;
+    height: auto;
 }
 
 .tit-caption{
     padding: 1rem;
 }
-
 
 .caption{
     text-align: center;
