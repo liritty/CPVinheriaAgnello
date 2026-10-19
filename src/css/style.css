@@ -319,6 +319,7 @@ iframe {
     justify-content: center;
     flex-direction: column;
     margin-top: -10vh;
+    margin-bottom: 120px;
 }
 
 .tipo-vinho{
@@ -332,7 +333,7 @@ iframe {
 }
 
 .vinhos{
-    margin-top: 200px;
+    margin-top: 110px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 4fr));
     max-width: 1100px;
