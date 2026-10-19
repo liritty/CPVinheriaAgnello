@@ -1,5 +1,19 @@
 /* Estilos */
 
+/* SOBRE */
+/* Parágrafos */
+.paragrafo-sobre:first-letter{
+  color: #a1253e;
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estado ao selecionar o parágrafo */
+.paragrafo-sobre::selection{
+  color: #a56b74;
+  background-color: #412f33;
+}
+
 /* GALERIA */
 /* Imagens vinhos */
 /* Estado - Normal */
@@ -32,7 +46,7 @@
   transition: transform 0.5s ease;
 }
 
-/* Selecionar a descrição */
+/* Estado ao selecionar a descrição */
 .text-caption::selection{
   color: #a79599;
 }

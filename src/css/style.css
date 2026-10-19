@@ -282,6 +282,17 @@ main {
     color: #a7a423;
 }
 
+.lista-vinhos {
+    display: flex;
+    gap: 50px;
+    line-height: 1.4;
+    font-size: 1.06rem;
+    color: #c9c632;
+    font-weight: bold;
+    padding-left: 300px;
+    width: 0;
+}
+
 figcaption {
     color: #a3a3a3;
     text-align: center;
@@ -298,16 +309,6 @@ iframe {
 .video-sobre {
     display: block;
     margin: 0 auto;
-}
-
-.lista-vinhos {
-    display: flex;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    max-width: 650px;
-    margin-left: 456px;
-    color: #bdba14;
-    font-weight: bold;
 }
 
 /* ABA GALERIA */
