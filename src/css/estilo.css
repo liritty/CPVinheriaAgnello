@@ -50,3 +50,10 @@
 .text-caption::selection{
   color: #a79599;
 }
+
+/* Titulos do sobre nos*/
+.heading-sobre:nth-child(1)  { color: #a77a3f; }
+.heading-sobre:nth-child(4) { color: #ff9900; }
+.heading-sobre:nth-child(7)  { color: #a77a3f; }
+.heading-sobre:nth-child(11) { color: #ff9900; }
+.heading-sobre:nth-child(14) { color: #a77a3f; }

@@ -319,7 +319,6 @@ iframe {
     justify-content: center;
     flex-direction: column;
     margin-top: -10vh;
-    margin-bottom: 120px;
 }
 
 .tipo-vinho{
@@ -333,7 +332,7 @@ iframe {
 }
 
 .vinhos{
-    margin-top: 110px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 4fr));
     max-width: 1100px;
@@ -403,24 +402,29 @@ iframe {
 
 /* Text bar */
 .input{
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(250, 248, 248, 0.281);
     border-radius: 5px;
     font-size: 16px;
 }
 
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #e8c547;
+  background: rgba(255, 255, 255, 0.85);
+}
 
 /* botao */
 
 .botao {
     padding: 10px 20px;
     background-color: var(--vermelho-vinho);
-    color: black;
+    color: rgb(100, 2, 48);
     border: none;
     border-radius: 5px;
 }
 
 .botao:hover {
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.719);
 }
 
 
