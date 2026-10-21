@@ -1,6 +1,5 @@
 
-
-/* ANIMAÇÕES */
+/* animacoes */
 
 @keyframes aparecer {
   from { opacity: 0; transform: translateY(20px); }
@@ -17,7 +16,7 @@
   to   { opacity: 1; transform: translateX(0); }
 }
 
-/* MENU */
+/* menu */
 
 nav a {
   position: relative;
@@ -39,18 +38,20 @@ nav a:hover::after {
   transform: scaleX(1);
 }
 
-/* ENTRADA DAS PÁGINAS */
+/* abertura d paginas */
 
 main:not(#home-container) {
   animation: aparecer 0.9s ease backwards;
 }
 
-/* HOME */
+/* home */
 
 .legenda-topo   { animation: aparecer 0.8s ease 0.2s backwards; }
 .nome-vinheria  { animation: da-esquerda 1s ease 0.5s backwards; }
 .nome-agnello   { animation: da-direita 1s ease 0.8s backwards; }
 .legenda-baixo  { animation: aparecer 0.8s ease 1.2s backwards; }
+
+/* botao */
 
 .but-home {
   animation: aparecer 0.8s ease 1.5s backwards;
@@ -73,7 +74,7 @@ main:not(#home-container) {
   transform: translateY(-1px);
 }
 
-/* SOBRE */
+/* sobre */
 
 .paragrafo-sobre:first-letter {
   color: #a1253e;
@@ -92,7 +93,7 @@ main:not(#home-container) {
 .heading-sobre:nth-child(11) { color: #ff9900; }
 .heading-sobre:nth-child(14) { color: #a77a3f; }
 
-/* EQUIPE */
+/* equipe */
 
 .card-membro {
   perspective: 1000px;
@@ -113,8 +114,7 @@ main:not(#home-container) {
   transform: rotateY(180deg);
 }
 
-.card-frente,
-.card-verso {
+.card-frente, .card-verso {
   position: absolute;
   top: 0;
   left: 0;
@@ -136,7 +136,7 @@ main:not(#home-container) {
   transform: scale(1.08);
 }
 
-/* GALERIA */
+/* galeria */
 
 .tintoimg {
   transition: transform 0.6s ease;
@@ -167,7 +167,7 @@ main:not(#home-container) {
   color: #a79599;
 }
 
-/* CONTATO */
+/* contatp */
 
 .formulario {
   animation: aparecer 0.9s ease backwards;
@@ -202,7 +202,7 @@ main:not(#home-container) {
 }
 
 .botao-enviar:hover {
-  background-color: #9c1e43;
+  background-color: var(--vermelho-vinho);
 }
 
 .botao-limpar:hover {

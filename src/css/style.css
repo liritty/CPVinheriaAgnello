@@ -12,7 +12,7 @@
     --background-img-contato: url('../assets/imgs/img\ 9.jpg');
 }
 
-/* GERAL */
+/* geral */
 
 * {
     margin: 0;
@@ -104,6 +104,7 @@ figcaption {
     color: #a7a423;
 }
 
+/* footer geral */
 footer {
     text-align: center;
     background-color: var(--texto-escuro);
@@ -111,7 +112,7 @@ footer {
     padding: 2rem;
 }
 
-/* HOME */
+/* home */
 
 #home-container {
     background-image:
@@ -164,6 +165,8 @@ footer {
     margin-left: 300px;
 }
 
+/* botao home */
+
 .but-home {
     display: inline-block;
     font-family: 'LINE Seed JP';
@@ -182,6 +185,8 @@ footer {
     outline: none;
     margin-top: 25px;
 }
+
+/* footer da home */
 
 body:has(#home-container) footer {
     position: absolute;
@@ -236,7 +241,7 @@ iframe {
     margin: 0 auto;
 }
 
-/* wquipe */
+/* equipe */
 
 .equipe-section {
     display: flex;
@@ -278,8 +283,7 @@ iframe {
     height: 100%;
 }
 
-.card-frente,
-.card-verso {
+.card-frente, .card-verso {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,8 +309,7 @@ iframe {
     font-size: 1.25rem;
 }
 
-.card-frente p,
-.card-verso p {
+.card-frente p, .card-verso p {
     margin: 0;
 }
 
