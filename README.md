@@ -12,15 +12,15 @@ O projeto resolve o problema do empresário fictício Sr. Giulio e sua filha Bia
 - GitHub Pages: https://liritty.github.io/CPVinheriaAgnello/
 
 ## Conteúdos
-- [Home](#-home) - Lirity 
+- [Home](#-home) - Lirity -
 Página inicial que da a abertura do site.
-- [Sobre](#-sobre) - Flávia
+- [Sobre](#-sobre) - Flávia -
 Conta um pouco da trajetória da empresa.
-- [Galeria](#-galeria) - Flávia
+- [Galeria](#-galeria) - Flávia -
 Mostruário dos vinhos e espumantes.
-- [Equipe](#-equipe) - Lirity
+- [Equipe](#-equipe) - Lirity -
 Apresentação da equipe da Vinheria Agnello.
-- [Contato](#-contato) - Eduardo
+- [Contato](#-contato) - Eduardo -
 Formulário para entrar em contato com a empresa.
 
 ## Tecnologias
