@@ -2,18 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
 
 :root {
-    --verde-claro: #c4c97e; 
-    --vermelho-vinho: #3a0a14; 
+    --verde-claro: #c4c97e;
+    --vermelho-vinho: #3a0a14;
     --vermelho: #7F1734;
+    --dourado: #c9a45c;
     --texto-escuro: #0e0e0e;
     --texto-claro: #ffffff;
     --background-img: url('../assets/imgs/img\ 22.jpg');
     --background-img-contato: url('../assets/imgs/img\ 9.jpg');
 }
 
-@view-transition {
-    navigation: auto;
-}
+/* GERAL */
 
 * {
     margin: 0;
@@ -22,8 +21,6 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
     font-family: 'LINE Seed JP';
     background-color: var(--vermelho-vinho);
     color: var(--texto-claro);
@@ -34,33 +31,28 @@ html, body {
     min-height: 100vh;
 }
 
-/* header */
+header, .site-header {
+    background-color: var(--texto-escuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
 
 .home-header {
     box-shadow: none !important;
 }
 
-header, .site-header {
-    background-color: var(--texto-escuro);
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 0.5rem 2%; 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-
-    position: fixed; 
-    top: 0;          
-    left: 0;         
-    width: 100%;     
-    z-index: 999;
-}
-
-/* logo */
-
 .logo-cont {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .logo-cont img {
@@ -68,71 +60,78 @@ header, .site-header {
 }
 
 .logo-cont h1 {
-    color: var(--vermelho); 
+    color: var(--vermelho);
     font-size: 1.9rem;
     font-family: 'Monsieur La Doulaise';
     transform: translateY(12px);
 }
 
-/* menu */
 nav, #menu-naveg {
     display: flex;
-    gap: 2rem; 
+    gap: 2rem;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--texto-claro); 
+    color: var(--texto-claro);
     font-size: 1.1rem;
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: var(--vermelho-vinho); 
+main {
+    padding: 4rem 10%;
+    padding-top: 100px;
+    flex: 1;
 }
 
-/* home */
+.heading-sobre, h1, h2 {
+    color: var(--texto-claro);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.heading-sobre {
+    margin-top: 60px;
+    color: var(--verde-claro);
+}
+
+figcaption {
+    color: #a3a3a3;
+    text-align: center;
+}
+
+.figcaption-text-color {
+    color: #a7a423;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--texto-escuro);
+    width: 100%;
+    padding: 2rem;
+}
+
+/* HOME */
+
 #home-container {
-    /* fundo */
-    background-image: 
-        linear-gradient(to bottom, var(--texto-escuro) 10%, transparent 35%, transparent 80%, var(--texto-escuro) 100%), 
+    background-image:
+        linear-gradient(to bottom, var(--texto-escuro) 10%, transparent 35%, transparent 80%, var(--texto-escuro) 100%),
         var(--background-img);
     width: 100vw;
     min-height: 100vh;
     flex: 1;
     background-size: cover;
     background-position: center;
-    
-    /* conteudo */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3%; 
-}
-
-.home-nome {
-    font-family: 'Monsieur La Doulaise';
-    font-size: 9rem;
-    line-height: 1; 
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0; 
-    width: 100%;
-}
-.nome-vinheria {
-    align-self: flex-start; 
-}
-
-.nome-agnello {
-    align-self: flex-start;
-    margin-left: 300px; 
+    padding-left: 3%;
 }
 
 .bloco-textos-home {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     width: max-content;
 }
 
@@ -144,6 +143,25 @@ nav a:hover {
 .legenda-baixo {
     text-align: center;
     margin: 0;
+}
+
+.home-nome {
+    font-family: 'Monsieur La Doulaise';
+    font-size: 9rem;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.nome-vinheria {
+    align-self: flex-start;
+}
+
+.nome-agnello {
+    align-self: flex-start;
+    margin-left: 300px;
 }
 
 .but-home {
@@ -160,106 +178,19 @@ nav a:hover {
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    
-    margin-top: 25px; 
+    margin-top: 25px;
 }
 
-.but-home:hover {
-  background-color: var(--vermelho-vinho);
-  box-shadow: 0px 15px 20px rgba(139, 25, 25, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
+body:has(#home-container) footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
 }
 
-.but-home:active {
-  transform: translateY(-1px);
-}
-
-.section-sobre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* equipe */
-
-.equipe-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img-equipe {
-    width: 600px;
-    display: block;
-    margin: 0 auto; 
-    height: 100%;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-
-.texto-centralizado {
-    text-align: center;
-}
-
-.tabela-equipe {
-    width: 100%;
-    max-width: 800px;
-    border-collapse: collapse;
-    margin: 40px 0;
-    font-size: 1.2rem;
-    background-color: rgba(71, 0, 0, 0.0473);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(27, 4, 4, 0.562);
-}
-
-.tabela-equipe thead {
-    background-color: var(--vermelho);
-    color: var(--texto-claro);
-    font-family: 'LINE Seed JP';
-}
-
-.tabela-equipe th, .tabela-equipe td {
-    padding: 18px 25px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.tabela-equipe tbody tr {
-    transition: background-color 0.3s ease;
-}
-
-.tabela-equipe tbody tr:hover {
-    background-color: rgba(112, 20, 20, 0.432);
-}
-
-.tabela-equipe tbody tr:last-of-type td {
-    border-bottom: none;
-}
-
-
-/* main - sobre */
-main {
-    padding: 4rem 10%;
-    padding-top: 100px;
-    flex: 1;
-}
-
-.heading-sobre, h1, h2 {
-    color: var(--texto-claro); 
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.heading-sobre {
-    margin-top: 60px;
-    color: var(--verde-claro);
-}
+/* sobre */
 
 .paragrafo-sobre {
     line-height: 1.6;
@@ -272,7 +203,7 @@ main {
 .img-sobre {
     width: 600px;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
     height: 100%;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -284,22 +215,16 @@ main {
 
 .lista-vinhos {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 650px;
+    margin: 10px auto 20px;
+    list-style-position: inside;
     line-height: 1.4;
     font-size: 1.06rem;
     color: #c9c632;
     font-weight: bold;
-    padding-left: 300px;
-    width: 0;
-}
-
-figcaption {
-    color: #a3a3a3;
-    text-align: center;
-}
-
-.figcaption-text-color {
-    color: #a7a423;
 }
 
 iframe {
@@ -311,8 +236,119 @@ iframe {
     margin: 0 auto;
 }
 
-/* ABA GALERIA */
-.galeria{
+/* wquipe */
+
+.equipe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipe-section h1.heading-sobre {
+    color: var(--verde-claro);
+}
+
+.img-equipe {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.equipe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    width: 100%;
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+.card-membro {
+    height: 320px;
+    cursor: pointer;
+    outline: none;
+}
+
+.card-interno {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-frente,
+.card-verso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 24px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.card-frente {
+    background-color: var(--texto-escuro);
+}
+
+.card-verso {
+    background: linear-gradient(160deg, var(--vermelho), var(--vermelho-vinho));
+}
+
+.card-frente h2 {
+    margin: 6px 0 0;
+    font-size: 1.25rem;
+}
+
+.card-frente p,
+.card-verso p {
+    margin: 0;
+}
+
+.cargo {
+    color: var(--verde-claro);
+    font-size: 0.9rem;
+}
+
+.dica {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.55;
+}
+
+.descricao {
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: var(--vermelho);
+    color: var(--texto-claro);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-membro:focus-visible .card-interno {
+    outline: 3px solid var(--verde-claro);
+    outline-offset: 4px;
+    border-radius: 16px;
+}
+
+/* galeria */
+
+.galeria {
     display: flex;
     position: relative;
     align-items: center;
@@ -321,127 +357,134 @@ iframe {
     margin-top: -10vh;
 }
 
-.tipo-vinho{
-    position: absolute;
-    margin-top: -216rem;
-    left: 20%;
-}
-
-.pri-title{
+.pri-title {
     margin-top: 10rem;
 }
 
-.vinhos{
+.vinhos {
     margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 4fr));
     max-width: 1100px;
 }
 
-.item1{
+.item1 {
     border: 1px solid #00000036;
 }
 
-/* Vinhos imagens */
-.tintoimg{
+.tintoimg {
     width: 260px;
     height: auto;
 }
 
-.tit-caption{
+.tit-caption {
     padding: 1rem;
 }
 
-.caption{
+.caption {
     text-align: center;
     padding: 2em;
-    
 }
 
-.brancos{
-    position: relative;
-    width: 100%;
-    z-index: 1000; 
-    padding: 10px 0;
-    background-color: var(--texto-escuro); 
-}
-
-/* pagina de contato */
+/* contato */
 
 .contato {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-    justify-content: center;
-    align-items: center;
-    background-image: var(--background-img-contato);
-    font-size: 30px;
     flex-direction: column;
-    gap: 10px;
-
+    justify-content: center;
+    align-items: center;
+    padding: 110px 20px 60px;
+    background-image: var(--background-img-contato);
+    background-size: cover;
+    background-position: center;
     width: 100vw;
     min-height: 100vh;
     flex: 1;
-    background-size: cover;
-    background-position: center;
 }
- 
-
-/* formulario de contato */
 
 .formulario {
-    background-color: rgba(0, 0, 0, 0.322);
     display: flex;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
-    gap: 10px;
-    border-radius: 10px;
+    gap: 18px;
+    width: 100%;
+    max-width: 460px;
+    padding: 36px 32px;
+    background-color: rgba(14, 14, 14, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
-/* Text bar */
-.input{
-    background-color: rgba(255, 255, 255, 0.281);
-    border-radius: 5px;
-    font-size: 16px;
+.titulo-contato {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--verde-claro);
 }
 
-input:focus, textarea:focus {
-  outline: none;
-  border: 2px solid #9e044c;
-  background:var(--vermelho-vinho);
+.texto-contato {
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-top: -8px;
 }
 
-/* botao */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.campo label {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--texto-claro);
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+textarea.input {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.botoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+}
 
 .botao {
-    padding: 10px 20px;
-    background-color: var(--vermelho-vinho);
-    color: rgb(100, 2, 48);
-    border: none;
-    border-radius: 5px;
+    flex: 1;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--texto-claro);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.botao:hover {
-    background-color: rgba(90, 90, 90, 0.747);
+.botao-enviar {
+    background-color: var(--vermelho);
 }
 
-
-/* footer */
-footer {
-    text-align: center;
-    background-color: var(--texto-escuro);
-    margin: 0px;
-    width: 100%;
-    padding: 2rem;
-    bottom: 0%;
-}
-
-/* footer DA HOME */
-body:has(#home-container) footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: transparent; 
+.botao-limpar {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
 }

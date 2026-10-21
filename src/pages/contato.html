@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/efeitos.css">
     <link rel="icon" href="../assets/imgs/logo uva.png">
 
     <title>Contato</title>
@@ -14,37 +14,49 @@
 
     <header class="site-header">
         <div class="logo-cont">
-        <img src="../assets/imgs/logo uva.png" alt="Logo Vinheria Agnello" class="logo-foto">
+            <img src="../assets/imgs/logo uva.png" alt="Logo Vinheria Agnello" class="logo-foto">
             <h1>Vinheria Agnello</h1>
         </div>
 
         <nav id="menu-naveg">
-           <a href="../../index.html">Home</a>
-           <a href="sobre.html">Sobre</a>
-           <a href="galeria.html">Galeria</a>
-           <a href="equipe.html">Equipe</a>
-           <a href="contato.html">Contato</a>
+            <a href="../../index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="contato.html">Contato</a>
         </nav>
 
     </header>
-    
-     <section class="contato">
-        <form action="" method="post">
-        <fieldset class="formulario">    
-            <label for="nome">Nome:</label>
-            <input class="input" type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
-            <br>
-            <label for="numero">Numero do celular:</label>
-            <input class="input" type="text" name="numero" id="numero" placeholder="Digite o seu numero" required>
-            <br>
-            <label for="email">E-mail:</label>
-            <input class="input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-            <br><br>
-            <textarea class="input" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui"></textarea>
-            <br>
-            <button class="botao" type="submit">Enviar</button>
-            <button class="botao" type="reset">Limpar</button>
-        </fieldset>
+
+    <section class="contato">
+        <form class="formulario" action="" method="post">
+            <h1 class="titulo-contato">Fale com a gente</h1>
+            <p class="texto-contato">Preencha os campos e entraremos em contato em breve.</p>
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input class="input" type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="numero">Celular</label>
+                <input class="input" type="tel" name="numero" id="numero" placeholder="Digite o seu número" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input class="input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="input" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui"></textarea>
+            </div>
+
+            <div class="botoes">
+                <button class="botao botao-enviar" type="submit">Enviar</button>
+                <button class="botao botao-limpar" type="reset">Limpar</button>
+            </div>
         </form>
     </section>
 
